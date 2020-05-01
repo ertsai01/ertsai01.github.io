@@ -1,0 +1,145 @@
+/* TEXT */
+
+p, a, li, h3 {
+	color: #7D645E;
+	line-height: 25px;
+}
+
+/* 676666*/
+
+a {
+	font-family: Montserrat;
+	font-size: 15pt;
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 18pt;
+	font-family: Yeseva One;
+	font-weight: normal;
+	color: #5E5768;
+	margin-bottom: 15px;
+}
+
+h2 {
+	font-size: 48pt;
+	font-family: Yeseva One;
+	font-weight: normal;
+	color: #5E5768;
+	
+}
+
+/* #424C55 */
+
+h3 {
+	font-family: Yeseva One;
+	font-weight: normal;
+	font-size: 18pt;
+}
+
+p, li {
+	font-family: Poppins;
+	font-size: 18px;
+}
+
+p {
+	color: #5E5768;
+}
+
+li {
+	margin-top: 15px;
+}
+
+
+/* BUTTONS */
+a:hover {
+	color: #5B433E;
+	cursor: pointer;
+}
+
+/* POSITIONING */
+
+body {
+	background-color: #F8F7FF;
+}
+
+#container {
+	position: relative;
+	background-color: #F4EAD0;
+	width: 700px;
+	padding: 55px;
+	padding-bottom: 7%;
+	margin-top: 72px;
+	margin-bottom: 72px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h2 {
+	margin-top: 0px;
+	margin-bottom: 25px;
+}
+
+#content {
+	width: 520px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+img {
+	max-width: 520px;
+	margin: 15px;
+	opacity: 0.9;
+}
+
+.description {
+	text-align: center;
+}
+
+#circles {
+	width: 520px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.circle {
+	width: 8px;
+	height: 8px;
+	background-color: #7D645E;
+	border-radius: 50%;
+
+}
+
+.recipe {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 600px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+#ingredients {
+
+
+}
+
+#instructions {
+	margin-left: 30px;
+	width: 75%;
+}
+
+

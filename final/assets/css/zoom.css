@@ -1,0 +1,172 @@
+#container {
+	position: relative;
+	background: linear-gradient(#403F44 0px, #403F44 50.999999px, #222027 51px, #222027 100%);
+	width: 700px;
+	height: 1000px;
+	padding-top: 15px;
+	margin-top: 72px;
+	margin-bottom: 72px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+}
+
+body {
+  background: url("img/desktop.jpg");
+  /* Source: Mac desktop images; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* HEADING */
+
+#heading {
+	position: absolute;
+	width: 700px;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#circles {
+	width: 65px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+}
+
+#applications {
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	transform: translateX(-30px);
+	display: flex;
+	align-items: center;
+}
+
+p {
+	font-family: Poppins;
+	color: white;
+	font-size: 14pt;
+	opacity: 70%;
+}
+
+/* BACKGROUNDS */
+
+.backgrounds {
+	position: relative;
+	width: 665px;
+	height: 350px;
+	margin-top: 36px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+
+.background {
+	position: absolute;
+	width: 665px;
+	opacity: 100%;
+	top: 0;
+	left: 0;
+
+}
+
+#og {
+	z-index: 1;
+}
+
+.hidden {
+	opacity: 0;
+}
+
+
+/* ICON BAR*/
+
+#iconbar {
+	position: relative;
+	width: 700px;
+	height: 70px;
+	background-color: #242424;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+#right {
+	transform: translateX(-20px);
+	padding: 20px;
+	padding-right: 17px;
+	padding-left: 17px;
+}
+
+#left {
+	transform: scale(0.9);
+}
+
+.icon {
+	width: 45px;
+	opacity: 0.9;
+	margin-left: 5px;
+
+}
+
+a {
+	font-family: Poppins;
+	color: red;
+	text-decoration: none;
+	padding-bottom: 0;
+	opacity: 0.9;
+}
+
+#right:hover {
+	background-color: #403F44;
+}
+
+/* BOTTOM PART */
+
+#change {
+	display: flex;
+	justify-content: center;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+h1 {
+	color: white;
+	opacity: 0.7;
+	font-family: Poppins;
+	font-size: 25pt;
+	font-weight: 400;
+}
+
+#pictures {
+	width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+
+}
+
+.pic {
+	width: 230px;
+	margin: 10px;
+	border-radius: 10px;
+}
+
+.pic:hover {
+	opacity: 0.5;
+	cursor: pointer;
+	transition: 0.25s;
+}
+
+
+
+
