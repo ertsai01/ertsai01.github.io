@@ -189,19 +189,16 @@ ul {
 	font-size: 18pt;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
 	.bio {
 		font-size: 16pt;
 	}	
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
 	.bio {
 		font-size: 14pt;
 	}
-	#about {
-		height: 700px;
-	}	
 }
 
 @media screen and (max-height: 650px) {
