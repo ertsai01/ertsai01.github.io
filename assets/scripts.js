@@ -1,39 +1,24 @@
-const music = document.getElementById('music');
-const design = document.getElementById('design');
-const programming = document.getElementById('programming');
+const menuContainer = document.getElementById('menu-container');
+const menu = document.getElementById('dropmenu');
+const button = document.getElementById('dropbutton');
 
-const musButton = document.getElementById('mus');
-const desButton = document.getElementById('des');
-const proButton = document.getElementById('pro');
 
-show(music, musButton);
+button.addEventListener("mouseover", function(){
+	menu.style.display = 'block';
+});
 
-function show(element, button) {
-	hideAll();
-	element.classList.remove('hidden');
+menu.addEventListener("mouseleave", function() {
+	menu.style.display = 'none'
+})
+
+
+
+/*
+function show(toShow) {
+	toShow.style.display = 'block';
 }
 
-function hideAll() {
-	music.classList.add('hidden');
-	design.classList.add('hidden');
-	programming.classList.add('hidden');
-}
+function dropDown = () => show(menu);
 
-function showMus() {
-	hideAll();
-	show(music, musButton);
-}
-
-function showDes() {
-	hideAll();
-	show(design, desButton);
-}
-
-function showPro() {
-	hideAll();
-	show(programming, proButton);
-}
-
-desButton.onclick = showDes;
-musButton.onclick = showMus;
-proButton.onclick = showPro;
+button.onHover = dropDown;
+*/
