@@ -1,0 +1,12 @@
+.container {
+	position: relative;
+	height: 70vh;
+	
+}
+
+#landing {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}

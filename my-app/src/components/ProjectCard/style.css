@@ -1,0 +1,63 @@
+.projcontainer {
+	position: relative;
+	display: flex;
+	flex-flow: row wrap;
+    left: 2.5%;
+    padding-bottom: 5%;
+}
+
+.thumbnail:hover {
+    opacity: 0.75;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.card {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 13pt;
+    line-height: 1.4;
+}
+
+.card-text, .link {
+    font-size: 11pt;
+}
+
+.subtext {
+    font-size: 10pt;
+}
+
+.overlay {
+    z-index: 1;
+    position: absolute;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay:hover {
+    cursor: pointer;
+}
+
+.overlay-text {
+    position: relative;
+    margin-top: 50px;
+}
+
+.overlay a {
+    font-weight: 800;
+    font-size: 12pt;
+}
+
+.overlay a {
+    margin-left: 5px;
+    margin-right: 5px;
+}
