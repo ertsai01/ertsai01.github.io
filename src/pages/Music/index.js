@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ProjectCard from '../../components/ProjectCard/index.js';
 import Header from '../../components/Header/index';
-import { thumbnails, videos, pdfs, audio } from '../../assets/constants';
+import { thumbnails, videos, pdfs } from '../../assets/constants';
 
 function Music() {
     const [showSky, setSky] = useState(false);

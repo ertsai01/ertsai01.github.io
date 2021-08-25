@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from '../../components/Header/index';
 import { images } from '../../assets/constants';
 import './style.css';
 
@@ -7,7 +6,7 @@ function About() {
     function Picture(props) {
         return (
             <div className={`picture ${props.className}`}>
-                <img src={props.src}/>
+                <img src={props.src} alt='Erin' />
                 <div className='offset down'></div>
                 <div className='offset up'></div>
             </div>
