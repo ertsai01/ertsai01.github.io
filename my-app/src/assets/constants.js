@@ -10,6 +10,9 @@ import ice from './img/thinice.png';
 import niming from './img/niming_thumbnail.png';
 import sky from './img/sky.png';
 import luhua from './img/luhua.jpg';
+import me from './img/me.png';
+import me2 from './img/me2.jpg';
+import chuanqi from './img/chuanqi_thumbnail.png';
 
 import handImg from './design/illustration/hand-01.png';
 import raccoonImg from './design/illustration/raccoon-01.png';
@@ -38,7 +41,10 @@ import productivity6 from './design/socialmedia/fpf_productivity/6.jpeg';
 
 import candyskiesVid from './music/audio/candy.mp4';
 import luhuaVid from './music/audio/luhua.mp4';
+import chuanqiVid from './music/audio/chuanqi_video.mp4';
 import appDemo from './vid/app_demo.mp4'
+
+import chuanqiAudio from './music/audio/chuanqi.m4a';
 
 import luhuaPdf from './music/pdf/luhua.pdf';
 import candySkiesPdf from './music/pdf/candyskies.pdf';
@@ -48,11 +54,12 @@ import pause from './img/pause.svg';
 import play from './img/play.svg';
 // Icons made by "https://www.freepik.com" 
 
-export const thumbnails = {study, motivate, hand, faq, raccoon, productivity, zen, wdd, ice, niming, sky, luhua }
-export const images = {handImg, raccoonImg};
+export const thumbnails = {study, motivate, hand, faq, raccoon, productivity, zen, wdd, ice, niming, sky, luhua, chuanqi }
+export const images = {handImg, raccoonImg, me, me2};
 export const faqSlides = {1: faq1, 2: faq2, 3: faq3, 4: faq4, 5: faq5, 6: faq6};
 export const motivatedSlides = {1: motivated1, 2: motivated2, 3: motivated3, 4: motivated4, 5: motivated5, 6: motivated6, 7: motivated7};
 export const productivitySlides = {1: productivity1, 2: productivity2, 3: productivity3, 4: productivity4, 5: productivity5, 6: productivity6};
-export const videos = { candyskiesVid, luhuaVid, appDemo };
+export const videos = { candyskiesVid, luhuaVid, appDemo, chuanqiVid };
 export const pdfs = { luhuaPdf, candySkiesPdf, chuanqiPdf };
 export const buttons = { pause, play };
+export const audio = { chuanqiAudio };
