@@ -50,6 +50,11 @@ import luhuaPdf from './music/pdf/luhua.pdf';
 import candySkiesPdf from './music/pdf/candyskies.pdf';
 import chuanqiPdf from './music/pdf/chuanqi.pdf';
 
+import house from './img/house.png';
+import facebook from './img/facebook.svg';
+import email from './img/email.svg';
+import linkedin from './img/linkedin.svg';
+
 export const thumbnails = {study, motivate, hand, faq, raccoon, productivity, zen, wdd, ice, niming, sky, luhua, chuanqi }
 export const images = {handImg, raccoonImg, me, me2};
 export const faqSlides = {1: faq1, 2: faq2, 3: faq3, 4: faq4, 5: faq5, 6: faq6};
@@ -58,3 +63,4 @@ export const productivitySlides = {1: productivity1, 2: productivity2, 3: produc
 export const videos = { candyskiesVid, luhuaVid, appDemo, chuanqiVid };
 export const pdfs = { luhuaPdf, candySkiesPdf, chuanqiPdf };
 export const audio = { chuanqiAudio };
+export const nav = { house, facebook, email, linkedin };
