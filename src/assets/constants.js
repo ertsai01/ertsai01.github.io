@@ -50,10 +50,6 @@ import luhuaPdf from './music/pdf/luhua.pdf';
 import candySkiesPdf from './music/pdf/candyskies.pdf';
 import chuanqiPdf from './music/pdf/chuanqi.pdf';
 
-import pause from './img/pause.svg';
-import play from './img/play.svg';
-// Icons made by "https://www.freepik.com" 
-
 export const thumbnails = {study, motivate, hand, faq, raccoon, productivity, zen, wdd, ice, niming, sky, luhua, chuanqi }
 export const images = {handImg, raccoonImg, me, me2};
 export const faqSlides = {1: faq1, 2: faq2, 3: faq3, 4: faq4, 5: faq5, 6: faq6};
@@ -61,5 +57,4 @@ export const motivatedSlides = {1: motivated1, 2: motivated2, 3: motivated3, 4: 
 export const productivitySlides = {1: productivity1, 2: productivity2, 3: productivity3, 4: productivity4, 5: productivity5, 6: productivity6};
 export const videos = { candyskiesVid, luhuaVid, appDemo, chuanqiVid };
 export const pdfs = { luhuaPdf, candySkiesPdf, chuanqiPdf };
-export const buttons = { pause, play };
 export const audio = { chuanqiAudio };
