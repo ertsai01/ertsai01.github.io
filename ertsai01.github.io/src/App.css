@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Spartan');
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+
+/* OVERALL */
+
+body {
+	background-color: #F8F8F7;
+	color: #464646;
+	font-family: 'Spartan', sans-serif;
+	padding: 5%;
+	text-align: center;
+	height: 100vh;
+	min-width: 750px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a, a:hover {
+	text-decoration: none;
+	color: #464646;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+	font-size: 12pt;
+	margin: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1 {
+	font-size: 28pt;
+	font-weight: 800;
+	font-family: 'Questrial', sans-serif;
+	opacity: 0.9;
 }
 
-.App-link {
-  color: #61dafb;
+/* NAVBAR */
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 2.5%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon {
+	width: 30px;
+	height: 30px;
+	opacity: 75%;
+}
+
+.icon:hover {
+	opacity: 30%;
+}
+
+.right {
+	margin-left: 30px;
+}
+
+.left {
+	margin-right: 30px;
+}
+
+.center {
+	text-align: center !important;
+	padding-bottom: 2.5% !important;
+}
+
+.fade-in {
+	animation-name: fade-in;
+	animation-duration: 2s;
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	} 100% {
+		opacity: 1;
+	}
 }
