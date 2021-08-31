@@ -1,0 +1,91 @@
+/* TEXT */
+
+a {
+	font-family: Montserrat;
+	font-size: 15pt;
+	text-decoration: none;
+	color: #4E4EFF;
+}
+
+h1 {
+	font-family: Comfortaa;
+	color: #E38C00;
+	font-size: 30pt;
+	font-weight: 700;
+	margin-bottom: 0;
+}
+
+li {
+	font-family: Poppins;
+	font-size: 18pt;
+	color: #626262;
+}
+
+/* BUTTONS */
+a:hover {
+	opacity: 30%;
+	cursor: pointer;
+}
+
+/* POSITIONING */
+body {
+	background-color: #9FB8AD;
+}
+
+#container {
+	position: relative;
+	background-color: white;
+	width: 550px;
+	padding: 55px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#content {
+	margin-top: 0px;
+	display: flex;
+	flex-direction: row;
+	width: 400px;
+	justify-content: center;
+}
+
+#check {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 44px;
+	padding-top: 7px;
+}
+
+.circle {
+	height: 26px;
+	width: 26px;
+	border-radius: 50%;
+    border: 1px solid #626262;
+	margin-top: 16px;
+	background-color: white;
+}
+
+.fill {
+	height: 26px;
+	width: 26px;
+	border-radius: 50%;
+    border: 1px solid #626262;
+	margin-top: 16px;
+	background-color: #E38C00;
+}
+
+
+.circle:hover {
+	cursor: pointer;
+	background-color: #E38C00;
+}
+
+ul {
+	line-height: 44px;
+	padding-left: 0;
+	list-style-type: none;
+}
