@@ -23,7 +23,7 @@ function Projects() {
         raccoon: () => toggleModal('raccoon'),
         productivity: () => toggleModal('productivity'),
         zen: () => navigate('https://www.figma.com/file/w8o8WeutfocpzZJUqEaDvb/find-your-zen?node-id=0%3A1'),
-        wdd: () => navigate('https:ertsai01.github.io/final'),
+        wdd: () => navigate('/final'),
         ice: () => navigate('https://youtu.be/B93ikt1JyTI')
     }
 
