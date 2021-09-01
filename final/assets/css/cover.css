@@ -1,0 +1,103 @@
+body {
+	background-color: #DBC7FF;
+}
+
+.content {
+	position: relative;
+	width: 570px;
+	padding-top: 3%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#quarantitle {
+	width: 450px;
+}
+.covers {
+	position: relative;
+	width: 570px;
+}
+
+.cover1 {
+	position: absolute;
+	width: 570px;
+	opacity: 100%;
+}
+
+#default {
+	z-index: 1;
+}
+
+.buttons {
+	opacity: 0%;
+	background-color: transparent;
+	position: absolute;
+}
+
+.buttons:hover {
+	cursor: pointer;
+}
+
+#button1 {
+	width: 50px;
+	height: 60px;
+	left: 157px;
+	top: 200px;
+	z-index: 1;
+}
+
+#button2 {
+	width: 105px;
+	height: 70px;
+	left: 315px;
+	top: 195px;
+	z-index: 2;
+}
+
+#button3 {
+	width: 75px;
+	height: 35px;
+	left: 410px;
+	top: 425px;
+	z-index: 3;
+}
+
+.hidden {
+	opacity: 0;
+}
+
+#eighth {
+	width: 20px;
+	position: absolute;
+	left: 340px;
+	top: 140px;
+	animation: fade 2s ease-in 0s infinite;
+}
+
+#doubles {
+	position: absolute;
+	width: 25px;
+	left: 380px;
+	top: 160px;
+	animation: fade 2s ease-in 1s infinite;
+}
+
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+	100% {
+		opacity: 0;
+	}
+}
