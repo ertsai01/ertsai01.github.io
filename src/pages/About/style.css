@@ -1,64 +1,126 @@
-.about {
-	margin-top: 5%;
+#about-container {
+	background-color: var(--white);
+	position: relative;
+	width: 100vw;
+	height: calc(100vh + 500px);
+}	
+
+.about-content {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	top: 0;
+	left: 0;
+}
+
+#about-card h1, #about-card p, #about-text p {
+	color: var(--secondary-purple);
+}
+
+#about-card h1 {
+	font-size: 20pt;
+	text-align: center;
+}
+
+#about-banner-container {
+	height: 100vh;
+	width: 100vw;
+	position: relative;
+}
+
+#about-banner {
+	width: 100%;
+	height: 50%;
+	overflow: hidden;
+	top: 0;
+	position: absolute;
+}
+
+#about-banner img {
+	width: 100%;
+}
+
+#about-card {
+	background-color: #EFF0F5;
+	width: 75%;
+	max-width: 700px;
+	height: 500px;
+	z-index: 1;
+	border-radius: 30px;
+	margin-top: 100px;
 	display: flex;
 	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	top: 50%;
+	box-shadow: 0 0 15px rgb(192, 192, 192);
 }
 
-.about p {
-	padding: 5px 50px 20px 50px;
-	text-align: left;
-	line-height: 1.4;
-	margin: 0;
-	min-width: 400px;
+#about-intro {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	height: 400px;
 }
 
-.about h1 {
+#me {
 	text-align: center;
-	white-space: nowrap;
 }
 
-.picture {
-	position: relative;
-	height: 225px;
-	width: 225px;
-	margin: 0 5% 2.5% 5%;
-}
-
-.picture img {
-	display: inline;
-	height: 200px;
-	margin: 0;
-	position: absolute;
-	top: 12.5px;
-	left: 12.5px;
-}
-
-.offset {
-	height: 200px;
+#me img {
 	width: 200px;
-	border-style: solid;
-	border-width: 2px;
-	position: absolute;
-	border-color: lightgray;
-	z-index: -1;
+	border-radius: 100px;
+	margin-bottom: 15px;
+	border: 4px solid var(--secondary-purple);
 }
 
-.down {
-	margin-top: 25px;
-	margin-right: 25px;
+#about-description {
+	width: 50%;
+	padding: 5%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-left: 1px solid rgb(206, 206, 206);
 }
 
-.up {
-	margin-bottom: 25px;
-	margin-left: 25px;
+#about-description p {
+	width: 80%;
 }
 
-@media (max-width: 600px) {
-	.picture {
+#about-text {
+	width: 100vw;
+	background-color: var(--white);
+	padding: 100px 15% 10% 15%;
+}
+
+.bullet-points {
+	margin-top: 10px;
+	text-align: left;
+}
+
+@media only screen and (max-width: 650px) {
+	#about-card {
+		flex-direction: column;
+		height: 425px;
+	}
+
+	#about-intro {
+		width: 100%;
+	}
+
+	#about-text {
+		font-size: 10pt;
+	}
+
+	#about-description {
 		display: none;
 	}
-	.about p {
-		min-width: 0px;
+
+	#me img {
+		width: 175px;
 	}
-	
 }

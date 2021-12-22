@@ -1,17 +1,28 @@
 import React from 'react';
-import './style.css'
+import './style.css';
+import Landing from './Landing/index';
+import About from './About/index';
+import Projects from './Projects/index';
+import Footer from '../../components/Footer/index';
+import NavBar from '../../components/NavBar/index';
 
-function Home() {
-    return (
-        <div>
-            <div className='home container'>
-                <h1 id='name'>ERIN TSAI</h1>
-                <p id='description'>cs + cognitive science student.</p>
-                <p id='description'>aspiring software developer, designer, musician, doodler, boba connoisseur.</p>
-    	    </div>
-            <p className='center'>• • •</p>
-        </div>
-    )
+
+class Home extends React.Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
+    render() {
+        return (
+            <div className='home-container'>
+                <NavBar page='home' />
+                <Landing />
+                <About />
+                <Projects />
+                <Footer />
+            </div>
+        )
+    }
 }
 
 export default Home;

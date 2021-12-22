@@ -9,6 +9,7 @@ import wdd from './img/wdd_thumbnail.png';
 import ice from './img/thinice.png';
 import niming from './img/niming_thumbnail.png';
 import sky from './img/sky.png';
+import sky_bw from './img/sky_bw.png';
 import luhua from './img/luhua.jpg';
 import me from './img/me.png';
 import me2 from './img/me2.jpg';
@@ -50,13 +51,23 @@ import luhuaPdf from './music/pdf/luhua.pdf';
 import candySkiesPdf from './music/pdf/candyskies.pdf';
 import chuanqiPdf from './music/pdf/chuanqi.pdf';
 
+import logo_svg from './img/logo.svg';
+import resume_pdf from './resume.pdf'
+
 // Icons made by "https://www.freepik.com" 
 
-export const thumbnails = {study, motivate, hand, faq, raccoon, productivity, zen, wdd, ice, niming, sky, luhua, chuanqi }
-export const images = {handImg, raccoonImg, me, me2};
+export const thumbnails = {study, motivate, hand, faq, raccoon, productivity, zen, wdd, ice, niming, sky, luhua, chuanqi };
+export const projectThumbnails = {study, motivate, hand, faq, raccoon, productivity, zen, wdd, ice }
+export const musicThumbnails = {niming, sky, luhua, chuanqi};
+export const images = {handImg, raccoonImg, me, me2, sky_bw };
 export const faqSlides = {1: faq1, 2: faq2, 3: faq3, 4: faq4, 5: faq5, 6: faq6};
 export const motivatedSlides = {1: motivated1, 2: motivated2, 3: motivated3, 4: motivated4, 5: motivated5, 6: motivated6, 7: motivated7};
 export const productivitySlides = {1: productivity1, 2: productivity2, 3: productivity3, 4: productivity4, 5: productivity5, 6: productivity6};
 export const videos = { candyskiesVid, luhuaVid, appDemo, chuanqiVid };
 export const pdfs = { luhuaPdf, candySkiesPdf, chuanqiPdf };
 export const audio = { chuanqiAudio };
+export const logo = logo_svg;
+export const url = 'localhost:3000/';
+export const resume = resume_pdf;
+
+
