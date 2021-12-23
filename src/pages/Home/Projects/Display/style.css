@@ -32,7 +32,7 @@
 
 .display-item img {
     width: 200px;
-    opacity: 50%;
+    opacity: 0.5;
 }
 
 #display-text-right {

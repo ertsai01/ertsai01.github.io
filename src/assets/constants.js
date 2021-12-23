@@ -67,7 +67,7 @@ export const videos = { candyskiesVid, luhuaVid, appDemo, chuanqiVid };
 export const pdfs = { luhuaPdf, candySkiesPdf, chuanqiPdf };
 export const audio = { chuanqiAudio };
 export const logo = logo_svg;
-export const url = 'localhost:3000/';
+export const url = 'ertsai01.github.io/';
 export const resume = resume_pdf;
 
 
