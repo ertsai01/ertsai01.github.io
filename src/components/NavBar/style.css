@@ -1,0 +1,24 @@
+.nav-bar {
+    background-color: var(--primary-gray);
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 2;
+
+    position: fixed;
+    transition: top 0.3s; 
+}
+
+#nav-bar-logo {
+    width: 40px;
+    height: 40px;
+}
+
+#nav-bar-right .strike {
+    margin-left: 15px;
+    color: #E8E9F3;
+}

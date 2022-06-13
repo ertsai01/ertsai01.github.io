@@ -1,0 +1,41 @@
+#experience-content {
+    width: 100vw;
+    background-color: var(--medium-gray);
+    padding: 10vh 25px 25px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.projects-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+}
+
+.projects-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#experience-content h1, #experience-content h4, #experience-content h6, #experience-content a {
+    color: var(--white);
+    font-weight: bold;
+}
+
+#experience-content h1 {
+    width: 80vw;
+    text-align: left;
+    margin-bottom: 32px;
+}

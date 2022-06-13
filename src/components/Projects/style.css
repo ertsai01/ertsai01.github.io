@@ -1,0 +1,43 @@
+.project {
+    margin: 0 30px 50px 30px;
+}
+
+.project-thumbnail img {
+    width: 200px;
+    margin-bottom: 25px;
+}
+
+.project-thumbnail img:hover, .illustration-thumbnail:hover  {
+    transition: 0.2s;
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+#project-description {
+    width: 200px;
+    color: var(--white);
+    font-size: 14pt;
+}
+
+.music-text {
+    margin-bottom: 25px;
+}
+
+.music-text a {
+    font-size: 14pt !important;
+}
+
+.subtext, .subtext:hover {
+    opacity: 0.8;
+    text-align: left;
+}
+
+.illustration-thumbnail {
+    max-width: 350px !important;
+}
+
+@media only screen and (max-width: 676px) {
+    #project-description {
+        font-size: 12pt;
+    }
+}
