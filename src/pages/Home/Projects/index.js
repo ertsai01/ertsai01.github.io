@@ -5,7 +5,7 @@ import { musicThumbnails, projectThumbnails, pdfs } from '../../../assets/consta
 
 function Projects() {
 
-    const projects = {
+    const experience = {
         0: {
             thumbnail: projectThumbnails.study,
             rightText: 'studywith.me',
@@ -30,23 +30,23 @@ function Projects() {
         }
     }
 
-    const music = {
+    const art = {
         0: {
             thumbnail: musicThumbnails.chuanqi,
             rightText: 'chuan qi',
-            leftText: 'sheet music',
+            leftText: '',
             link: pdfs.chuanqiPdf
         },
         1: {
             thumbnail: musicThumbnails.luhua,
             rightText: 'luhua',
-            leftText: 'sheet music',
+            leftText: '',
             link: pdfs.luhuaPdf
         },
         2: {
             thumbnail: musicThumbnails.sky,
             rightText: 'candy skies',
-            leftText: 'sheet music',
+            leftText: '',
             link: pdfs.candySkiesPdf
         }
     }
@@ -54,14 +54,14 @@ function Projects() {
     return (
         <>
             <div id='projects-container'>
-                <Title title='projects' page='experience' />
-                <Display items={projects} />
+                <Title title='projects' page='experience' link='experience' />
+                <Display items={experience} />
             </div>
         
         
             <div id='projects-container'>
-                <Title title='music' page='music' />
-                <Display items={music} />
+                <Title title='tunes' page='just for fun' link='fun' />
+                <Display items={art} />
             </div>    
         </> 
     )

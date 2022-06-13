@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    font-size: 14pt;
 }
 
 .img-bubble {
@@ -32,12 +33,13 @@
     margin-right: 10px;
   }
 
-  @media only screen and (max-width: 576px) {
-    .speech-bubble {
-      font-size: 9pt;
-    }
+  @media only screen and (max-width: 676px) {
     .img-bubble {
       width: 150px;
     }
+
+    .speech-bubble-container {
+      font-size: 12pt;
+  }
   }
   

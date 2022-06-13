@@ -26,7 +26,7 @@ function Footer() {
                         <Link to='/' className='.footer-link strike' >home</Link>
                         <Link to='/about' className='.footer-link strike' >about</Link>
                         <Link to='/experience' className='.footer-link strike' >experience</Link>
-                        <Link to='/music' className='.footer-link strike' >music</Link>
+                        <Link to='/fun' className='.footer-link strike' >just for fun</Link>
                     </div>
                 </div>
             </div>

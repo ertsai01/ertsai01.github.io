@@ -4,12 +4,15 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home/index';
 import About from './pages/About/index';
 import Experience from './pages/Experience/index';
-import Music from './pages/Music';
+import Fun from './pages/Fun';
+import Footer from './components/Footer/index';
 
 function App() {
+
   return (
-    <Router>
-        <Switch>
+    <Router >
+
+      <Switch>
           <Route exact path="/">
             <Home />
           </Route>
@@ -19,10 +22,12 @@ function App() {
           <Route path="/experience">
             <Experience />
           </Route>
-          <Route path="/music">
-            <Music />
+          <Route path="/fun">
+            <Fun />
           </Route>
         </Switch>
+     
+        <Footer />
     </Router>
   );
 }

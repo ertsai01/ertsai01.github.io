@@ -7,39 +7,40 @@ class NavBar extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            prevScrollpos: window.pageYOffset
+            prevScrollpos: window.pageYOffset,
+            transparent: false
         }
         this.handleScroll = this.handleScroll.bind(this);
     }
 
     componentDidMount() {
-        let navBar = document.querySelector(".nav-bar");
         if (this.props.page === 'home') {
-            navBar.classList.add('home-nav-bar');
+            this.setState({transparent: true});
+            window.addEventListener('scroll', this.handleScroll);
         }
-        window.addEventListener('scroll', this.handleScroll);
+    }
+
+    componentDidUpdate() {
+        const navBar = document.querySelector(".nav-bar");
+        if (this.state.transparent) navBar.style.backgroundColor = 'transparent';
+        else navBar.style.backgroundColor = 'var(--primary-gray)';
     }
 
     componentWillUnmount() {
-        window.removeEventListener('scroll', this.handleScroll);
+        if (this.props.page === 'home') {
+            window.removeEventListener('scroll', this.handleScroll);
+        }
     }
 
     handleScroll() {
-        let navBar = document.querySelector(".nav-bar");
         let currentScrollPos = window.pageYOffset;
-        if (this.props.page && this.props.page === 'home') {
+        if (this.props.page === 'home') {
             if (currentScrollPos < window.innerHeight) {
-                navBar.classList.add('home-nav-bar');
+                if (this.state.transparent === false) this.setState({transparent: true});
+            } else {
+                if (this.state.transparent === true) this.setState({transparent: false});
             }
-            else {
-                navBar.classList.remove('home-nav-bar');
-            }
-        } else {
-            navBar.classList.remove('home-nav-bar');
         }
-        if (this.state.prevScrollpos > currentScrollPos) navBar.style.top = "0";
-        else navBar.style.top = "-50px";
-        this.setState({ prevScrollpos: currentScrollPos })
     }
 
     render() {
@@ -51,7 +52,7 @@ class NavBar extends React.Component {
             <div id='nav-bar-right'>
                 <Link to='/about' className='strike'>about</Link>
                 <Link to='/experience' className='strike'>experience</Link>
-                <Link to='/music' className='strike'>music</Link>
+                <Link to='fun' className='strike'>just for fun</Link>
             </div>
             </div>
             

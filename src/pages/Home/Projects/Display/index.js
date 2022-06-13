@@ -1,5 +1,6 @@
 import './style.css';
 import Fade from 'react-reveal/Fade';
+import DisplayItem from '../../../../components/DisplayItem/index';
 
 function Display(props) {
 
@@ -7,21 +8,11 @@ function Display(props) {
         <Fade right>
             <div id='display-container'>
             {Object.values(props.items).map(item => {
-                const [thumbnail, rightText, leftText, link] = Object.values(item);
-                const altText = `Visit project: ${rightText}`
+                const [thumbnail, rightText, leftText, link, alt] = Object.values(item);
                 return (
-                    <div className='display-item'>
-                        <p id='display-text-right'>{rightText}</p>
-                        <p id='display-text-left'>{leftText}</p>
-                        <a href={link} target='_blank' rel="noreferrer" >
-                            <img src={thumbnail} alt={altText} />
-                        </a>
-                    </div>
+                    <DisplayItem thumbnail={thumbnail} rightText={rightText} leftText={leftText} link={link} alt={alt} />
                 );
             })}
-                <div className='display-item display-text-container'>
-                    <p>+ more coming soon</p>
-                </div>
             </div>
         </Fade>  
     )

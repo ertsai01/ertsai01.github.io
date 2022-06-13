@@ -1,29 +1,41 @@
-#experience-container {
-    background-color: var(--white);
-    display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-    width: 100vw;
-}
-
 #experience-content {
-    height: 100vh;
     width: 100vw;
-    background-color: var(--white);
-    padding: 75px 25px 25px 25px;
+    background-color: var(--medium-gray);
+    padding: 10vh 25px 25px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#experience-content h1, #experience-content a {
-    color: var(--secondary-purple);
+.experience-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.projects-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+}
+
+.projects-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#experience-content h1, #experience-content h4, #experience-content h6, #experience-content a {
+    color: var(--white);
     font-weight: bold;
 }
 
-#experience-content a {
-    font-size: 18pt;
+#experience-content h1 {
+    width: 80vw;
+    text-align: left;
+    margin-bottom: 32px;
 }
-
-#experience-content a:hover {
-    color: var(--secondary-purple);
-}
-

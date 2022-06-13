@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size: 14pt;
 }
 
 #home-about-content {
@@ -61,13 +62,11 @@
     }
   }
 
-  @media only screen and (max-width: 576px) {
+  @media only screen and (max-width: 676px) {
     #text-bar b {
         color: var(--secondary-purple);
         opacity: 1;
         height: 20px;
-        font-size: 9pt;
-
     }
 
     #text-bar {
@@ -76,5 +75,9 @@
 
     #home-about-content {
         min-width: 280px;
+    }
+
+    #home-about-container {
+        font-size: 12pt;
     }
   }

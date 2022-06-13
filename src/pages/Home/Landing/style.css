@@ -6,31 +6,45 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     height: 100%;
     margin: 0 50px 50px 50px;
 }
 
 #logo {
     float: left;
-    width: 250px;
+    height: 200px;
+}
+
+#logo2 {
+    width: 50%;
+    min-width: 500px;
+    display: block;
+}
+
+#logo2_vertical {
+    width: 50%;
+    min-width: 200px;
+    position: absolute;
+    display: none;
 }
 
 #landing-text {
     color: var(--white);
     text-align: right;
-    line-height: 30pt;
 }
 
 #landing-text h1 {
     font-size: 40pt;
+    margin-bottom: 28px;
 }
 
 #landing-text p {
     font-size: 16pt;
+    line-height: 1;
 }
 
-.glow {
+.glow:hover {
     text-shadow: 0 0 15px var(--white);
     transition: 0.2s;
 }
@@ -54,15 +68,16 @@ body {
 @media only screen and (max-width: 600px) {
     #landing-container {
         flex-direction: column;
+        justify-content: center;
     }
 
     #logo {
         width: 200px;
+        margin-bottom: 5vh;
     }
 
     #landing-text {
         text-align: center;
-        margin-top: 20px;
     }
 
     #landing-text h1 {
@@ -71,5 +86,13 @@ body {
 
     #landing-text p {
         font-size: 12pt;
+    }
+
+    #logo2_vertical {
+        display: block;
+    }
+
+    #logo2 {
+        display: none;
     }
   }

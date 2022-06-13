@@ -3,24 +3,24 @@ import './style.css';
 import Landing from './Landing/index';
 import About from './About/index';
 import Projects from './Projects/index';
-import Footer from '../../components/Footer/index';
-import NavBar from '../../components/NavBar/index';
-
+import NavBar from '../../components/NavBar';
 
 class Home extends React.Component {
-    componentDidMount() {
-        window.scrollTo(0, 0);
+    
+    componentWillMount() {
+        window.scrollTo({top: 0, behavior: 'instant'});
     }
 
     render() {
         return (
+            <>
+            <NavBar page='home' />
             <div className='home-container'>
-                <NavBar page='home' />
                 <Landing />
                 <About />
                 <Projects />
-                <Footer />
             </div>
+            </>
         )
     }
 }

@@ -1,0 +1,71 @@
+.role-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 25px;
+    
+}
+
+.role {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 50px;
+    width: 40vw;
+    color: var(--white);
+}
+
+#role-title {
+    color: var(--light-gray);
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.role-bar {
+    position: relative;
+    background-color: var(--primary-gray);
+    height: 10px;
+    width: 80px;
+    margin: 0px 20px 20px 0;
+
+}
+
+.role-info {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: medium;
+    border-color: var(--white);
+    
+}
+
+.role-info h4 {
+    line-height: 40px;
+    text-align: center;
+    color: var(--white);
+}
+
+@media only screen and (max-width: 576px) {
+    .role-item {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 75vw;
+        margin-bottom: 10vh;
+    }
+
+    .role {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .role-text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 37.5px;
+    }
+}

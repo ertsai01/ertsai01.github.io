@@ -42,10 +42,13 @@ class Landing extends React.Component {
                     <div id='landing-container'>
                         <img id='logo' src={logo} alt='logo' />
                         <div id='landing-text'>
-                            <h1 onMouseOver={(e) => this.glowOnHover(e)} onMouseOut={e => this.removeGlow(e)}>ERIN TSAI</h1>
-                            <p>uc berkeley cs + cognitive science student since 2019.</p>
-                            <p>dreaming big since day 1.</p>
+                            <h1 class='glow'>ERIN TSAI</h1>
+                            <div>
+                                <p>uc berkeley cs + cognitive science student.</p>
+                                <p>welcome to my world!</p>
+                            </div>
                         </div>
+                        
                     </div>
                 </Fade>
             </div>
