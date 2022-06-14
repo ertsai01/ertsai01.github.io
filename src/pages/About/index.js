@@ -3,6 +3,7 @@ import { images, icons } from '../../assets/constants';
 import './style.css';
 import Fade from 'react-reveal/Fade';
 import NavBar from '../../components/NavBar';
+import Footer from '../../components/Footer';
 
 class About extends React.Component {
 
@@ -62,6 +63,7 @@ class About extends React.Component {
                     </div>
                 </Fade>
             </div>
+            <Footer />
             </>
         )
     }

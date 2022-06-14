@@ -4,6 +4,7 @@ import Landing from './Landing/index';
 import About from './About/index';
 import Projects from './Projects/index';
 import NavBar from '../../components/NavBar';
+import Footer from '../../components/Footer';
 
 class Home extends React.Component {
     
@@ -20,6 +21,7 @@ class Home extends React.Component {
                 <About />
                 <Projects />
             </div>
+            <Footer />
             </>
         )
     }

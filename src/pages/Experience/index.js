@@ -2,6 +2,7 @@ import React from 'react';
 import Roles from '../../components/Roles/index';
 import Projects from '../../components/Projects/Projects';
 import NavBar from '../../components/NavBar';
+import Footer from '../../components/Footer';
 
 import { expThumbnails, projectThumbnails } from '../../assets/constants';
 import './style.css';
@@ -130,6 +131,7 @@ class Experience extends React.Component {
                 </div>
             
             </div>
+            <Footer />
             </>
         )
     }

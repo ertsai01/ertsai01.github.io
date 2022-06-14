@@ -4,6 +4,7 @@ import { thumbnails, videos, pdfs } from '../../assets/constants';
 import Pieces from '../../components/Projects/Pieces';
 import Illustrations from '../../components/Projects/Illustrations';
 import NavBar from '../../components/NavBar';
+import Footer from '../../components/Footer';
 import './style.css';
 
 class Fun extends React.Component {
@@ -101,6 +102,7 @@ class Fun extends React.Component {
                     {getIllustrations()}
                 </div>
             </div>
+            <Footer />
             </>
         )
     }

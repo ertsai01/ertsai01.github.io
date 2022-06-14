@@ -16,7 +16,7 @@ function Projects() {
             thumbnail: projectThumbnails.wdd,
             rightText: 'quarantine time capsule',
             leftText: 'web design + development',
-            link: '/final'
+            link: 'https://localhost:3000/final/index.html'
         },
         2: {
             thumbnail: projectThumbnails.zen,

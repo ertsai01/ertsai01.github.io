@@ -5,7 +5,6 @@ import Home from './pages/Home/index';
 import About from './pages/About/index';
 import Experience from './pages/Experience/index';
 import Fun from './pages/Fun';
-import Footer from './components/Footer/index';
 
 function App() {
 
@@ -27,7 +26,7 @@ function App() {
           </Route>
         </Switch>
      
-        <Footer />
+        
     </Router>
   );
 }

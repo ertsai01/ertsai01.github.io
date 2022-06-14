@@ -67,7 +67,7 @@ class About extends React.Component {
                     </div>
                 </Fade>
                 <Fade>
-                    <div id='text-bar' alt={`i'm an aspiring ${this.concatWordList}`}>
+                    <div id='text-bar' alt={`i'm an aspiring ${this.concatWordList}`} style={{ whiteSpace: 'nowrap' }}>
                         <b>i'm an aspiring&nbsp;</b>
                         <div>
                             <b className='typing'></b>

@@ -2,12 +2,12 @@ document.getElementById('default').classList.remove("hidden");
 
 function show(element) {
 	document.getElementById('default').classList.add('hidden');
-	document.getElementById(element).classList.remove("hidden");
+	if (document.getElementById(element).classList) document.getElementById(element).classList.remove("hidden");
 }
 
 function hide(element) {
 	document.getElementById('default').classList.remove('hidden');
-	document.getElementById(element).classList.add("hidden");
+	if (document.getElementById(element).classList) document.getElementById(element).classList.add("hidden");
 }
 
 function showCoffee() {
