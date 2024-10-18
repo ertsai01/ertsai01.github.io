@@ -45,7 +45,7 @@ class Landing extends React.Component {
                             <h1 class='glow'>ERIN TSAI</h1>
                             <div>
                                 <p>uc berkeley cs + cognitive science student.</p>
-                                <p>welcome to my world!</p>
+                                <p>welcome!</p>
                             </div>
                         </div>
                         
