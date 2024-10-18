@@ -17,37 +17,37 @@ function App() {
   return (
     <Router >
       <Switch>
-        <Route exact path="/">
+        <Route exact path={process.env.PUBLIC_URL + "/"}>
           <Home />
         </Route>
-        <Route path="/about">
+        <Route path={process.env.PUBLIC_URL + "/about"}>
           <About />
         </Route>
-        <Route path="/experience">
+        <Route path={process.env.PUBLIC_URL + "/experience"}>
           <Experience />
         </Route>
-        <Route path="/fun">
+        <Route path={process.env.PUBLIC_URL + "/fun"}>
           <Fun />
         </Route>
-        <Route path="/final">
+        <Route path={process.env.PUBLIC_URL + "/final"}>
           <Final />
         </Route>
-        <Route path="/dalgona">
+        <Route path={process.env.PUBLIC_URL + "/dalgona"}>
           <Dalgona />
         </Route>
-        <Route path="/applications">
+        <Route path={process.env.PUBLIC_URL + "/applications"}>
           <Applications />
         </Route>
-        <Route path="/dalgona">
+        <Route path={process.env.PUBLIC_URL + "/dalgona"}>
           <Dalgona />
         </Route>
-        <Route path="/spotify">
+        <Route path={process.env.PUBLIC_URL + "/spotify"}>
           <Spotify />
         </Route>
-        <Route path="/zoom">
+        <Route path={process.env.PUBLIC_URL + "/zoom"}>
           <Zoom />
         </Route>
-        <Route path="/reminders">
+        <Route path={process.env.PUBLIC_URL + "/reminders"}>
           <Reminders />
         </Route>
       </Switch>
