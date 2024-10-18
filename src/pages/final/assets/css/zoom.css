@@ -1,4 +1,4 @@
-#container {
+#zoom-container {
 	position: relative;
 	background: linear-gradient(#403F44 0px, #403F44 50.999999px, #222027 51px, #222027 100%);
 	width: 700px;
@@ -11,17 +11,19 @@
 	border-radius: 5px;
 }
 
-body {
+#zoom-content-body {
   background: url("img/desktop.jpg");
   /* Source: Mac desktop images; */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+	width: 100%;
+	position: absolute;
 }
 
 /* HEADING */
 
-#heading {
+#zoom-heading {
 	position: absolute;
 	width: 700px;
 	top: 0;
@@ -31,22 +33,23 @@ body {
 	align-items: center;
 }
 
-#circles {
+#zoom-circles {
 	width: 65px;
 	margin-bottom: 10px;
 	margin-left: 20px;
 }
 
-#applications {
+#zoom-applications {
 	height: 50px;
 	margin-left: auto;
 	margin-right: auto;
 	transform: translateX(-30px);
 	display: flex;
 	align-items: center;
+	padding-top: 20px;
 }
 
-p {
+#zoom-content-body p {
 	font-family: Poppins;
 	color: white;
 	font-size: 14pt;
@@ -55,7 +58,7 @@ p {
 
 /* BACKGROUNDS */
 
-.backgrounds {
+.zoom-backgrounds {
 	position: relative;
 	width: 665px;
 	height: 350px;
@@ -65,7 +68,7 @@ p {
 	overflow: hidden;
 }
 
-.background {
+.zoom-background {
 	position: absolute;
 	width: 665px;
 	opacity: 100%;
@@ -78,14 +81,14 @@ p {
 	z-index: 1;
 }
 
-.hidden {
+.zoom-hidden {
 	opacity: 0;
 }
 
 
 /* ICON BAR*/
 
-#iconbar {
+#zoom-iconbar {
 	position: relative;
 	width: 700px;
 	height: 70px;
@@ -97,25 +100,25 @@ p {
 
 }
 
-#right {
+#zoom-right {
 	transform: translateX(-20px);
 	padding: 20px;
 	padding-right: 17px;
 	padding-left: 17px;
 }
 
-#left {
+#zoom-left {
 	transform: scale(0.9);
 }
 
-.icon {
+.zoom-icon {
 	width: 45px;
 	opacity: 0.9;
 	margin-left: 5px;
 
 }
 
-a {
+#zoom-content-body a {
 	font-family: Poppins;
 	color: red;
 	text-decoration: none;
@@ -123,20 +126,20 @@ a {
 	opacity: 0.9;
 }
 
-#right:hover {
+#zoom-right:hover {
 	background-color: #403F44;
 }
 
 /* BOTTOM PART */
 
-#change {
+#zoom-change {
 	display: flex;
 	justify-content: center;
 	margin-top: 15px;
 	margin-bottom: 5px;
 }
 
-h1 {
+#zoom-content-body h1 {
 	color: white;
 	opacity: 0.7;
 	font-family: Poppins;
@@ -144,7 +147,7 @@ h1 {
 	font-weight: 400;
 }
 
-#pictures {
+#zoom-pictures {
 	width: 650px;
 	margin-left: auto;
 	margin-right: auto;
@@ -155,19 +158,15 @@ h1 {
 
 }
 
-.pic {
+.zoom-pic {
 	width: 230px;
 	margin: 10px;
 	border-radius: 10px;
 	height: 159px;
 }
 
-.pic:hover {
+.zoom-pic:hover {
 	opacity: 0.5;
 	cursor: pointer;
 	transition: 0.25s;
 }
-
-
-
-

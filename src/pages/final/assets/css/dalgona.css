@@ -1,111 +1,59 @@
-/* TEXT */
-
-p, a, li, h3 {
-	color: #7D645E;
-	line-height: 25px;
-}
-
-/* 676666*/
-
-a {
-	font-family: Montserrat;
-	font-size: 15pt;
-	text-decoration: none;
-}
-
-h1 {
-	font-size: 18pt;
-	font-family: Yeseva One;
-	font-weight: normal;
-	color: #5E5768;
-	margin-bottom: 15px;
-}
-
-h2 {
-	font-size: 48pt;
-	font-family: Yeseva One;
-	font-weight: normal;
-	color: #5E5768;
-	
-}
-
-/* #424C55 */
-
-h3 {
-	font-family: Yeseva One;
-	font-weight: normal;
-	font-size: 18pt;
-}
-
-p, li {
-	font-family: Poppins;
-	font-size: 18px;
-}
-
-p {
-	color: #5E5768;
-}
-
-li {
-	margin-top: 15px;
-}
-
-
-/* BUTTONS */
-a:hover {
-	color: #5B433E;
-	cursor: pointer;
-}
+@import url('https://fonts.googleapis.com/css?family=Yeseva+One');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 /* POSITIONING */
 
-body {
+#dalgona-content-body {
 	background-color: #F8F7FF;
+	min-height: fit-content;
+	margin: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
-#container {
-	position: relative;
+#dalgona-container {
 	background-color: #F4EAD0;
 	width: 700px;
 	padding: 55px;
-	padding-bottom: 7%;
 	margin-top: 72px;
 	margin-bottom: 72px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.title {
+.dalgona-title {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-h2 {
+#dalgona-content-body h2 {
 	margin-top: 0px;
 	margin-bottom: 25px;
 }
 
-#content {
+#dalgona-content {
 	width: 520px;
-	margin: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-img {
+#dalgona-content-body img {
 	max-width: 520px;
 	margin: 15px;
 	opacity: 0.9;
 }
 
-.description {
+.dalgona-description {
 	text-align: center;
 }
 
 #circles {
-	width: 520px;
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -128,13 +76,8 @@ img {
 	width: 600px;
 }
 
-ul {
+#dalgona-content-body ul {
 	list-style-type: none;
-}
-
-#ingredients {
-
-
 }
 
 #instructions {
@@ -142,4 +85,66 @@ ul {
 	width: 75%;
 }
 
+/* TEXT */
+
+#dalgona-content-body p, 
+#dalgona-content-body a, 
+#dalgona-content-body li, 
+#dalgona-content-body h3 {
+	color: #7D645E;
+	line-height: 25px;
+}
+
+/* 676666*/
+
+#dalgona-content-body a {
+	font-family: 'Montserrat';
+	font-size: 15pt;
+	text-decoration: none;
+}
+
+#dalgona-content-body h1 {
+	font-size: 18pt;
+	font-family: 'Yeseva One';
+	font-weight: normal;
+	color: #5E5768;
+	margin-bottom: 15px;
+}
+
+#dalgona-content-body h2 {
+	font-size: 48pt;
+	font-family: 'Yeseva One';
+	font-weight: normal;
+	color: #5E5768;
+	
+}
+
+/* #424C55 */
+
+#dalgona-content-body h3 {
+	font-family: 'Yeseva One';
+	font-weight: normal;
+	font-size: 18pt;
+}
+
+#dalgona-content-body p, 
+#dalgona-content-body li {
+	font-family: 'Poppins';
+	font-size: 18px;
+}
+
+#dalgona-content-body p {
+	color: #5E5768;
+}
+
+#dalgona-content-body li {
+	margin-top: 15px;
+}
+
+
+/* BUTTONS */
+#dalgona-content-body a:hover {
+	color: #5B433E;
+	cursor: pointer;
+}
 

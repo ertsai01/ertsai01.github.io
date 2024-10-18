@@ -1,11 +1,11 @@
-#content-body {
+#final-content-body {
 	background-color: #DBC7FF;
 	height: 100%;
 	width: 100%;
 	position: absolute;
 }
 
-.content {
+.final-content {
 	position: relative;
 	padding-top: 3%;
 	margin-left: auto;
@@ -25,22 +25,27 @@
 }
 
 .cover1 {
+	display: block;
 	position: absolute;
 	width: 570px;
 	opacity: 100%;
+}
+
+.hidden {
+	display: none;
 }
 
 #default {
 	z-index: 1;
 }
 
-.buttons {
+.final-buttons {
 	opacity: 0%;
 	background-color: transparent;
 	position: absolute;
 }
 
-.buttons:hover {
+.final-buttons:hover {
 	cursor: pointer;
 }
 

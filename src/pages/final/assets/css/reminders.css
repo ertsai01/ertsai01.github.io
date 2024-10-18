@@ -1,13 +1,13 @@
 /* TEXT */
 
-a {
+#reminders-content-body a {
 	font-family: Montserrat;
 	font-size: 15pt;
 	text-decoration: none;
 	color: #4E4EFF;
 }
 
-h1 {
+#reminders-content-body h1 {
 	font-family: Comfortaa;
 	color: #E38C00;
 	font-size: 30pt;
@@ -15,24 +15,27 @@ h1 {
 	margin-bottom: 0;
 }
 
-li {
+#reminders-content-body li {
 	font-family: Poppins;
 	font-size: 18pt;
 	color: #626262;
 }
 
 /* BUTTONS */
-a:hover {
+#reminders-content-body a:hover {
 	opacity: 30%;
 	cursor: pointer;
 }
 
 /* POSITIONING */
-body {
+#reminders-content-body {
 	background-color: #9FB8AD;
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }
 
-#container {
+#reminders-container {
 	position: relative;
 	background-color: white;
 	width: 550px;
@@ -43,8 +46,7 @@ body {
 	margin-right: auto;
 }
 
-
-#content {
+#reminders-content {
 	margin-top: 0px;
 	display: flex;
 	flex-direction: row;
@@ -52,7 +54,7 @@ body {
 	justify-content: center;
 }
 
-#check {
+#reminders-check {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -60,7 +62,7 @@ body {
 	padding-top: 7px;
 }
 
-.circle {
+.reminders-circle {
 	height: 26px;
 	width: 26px;
 	border-radius: 50%;
@@ -69,7 +71,7 @@ body {
 	background-color: white;
 }
 
-.fill {
+.reminders-fill {
 	height: 26px;
 	width: 26px;
 	border-radius: 50%;
@@ -79,13 +81,14 @@ body {
 }
 
 
-.circle:hover {
+.reminders-circle:hover {
 	cursor: pointer;
 	background-color: #E38C00;
 }
 
-ul {
-	line-height: 44px;
+#reminders-content-body ul {
+	line-height: 42px;
 	padding-left: 0;
 	list-style-type: none;
+	padding-top: 15px;
 }
