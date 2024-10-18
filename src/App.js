@@ -15,7 +15,7 @@ import Reminders from './pages/final/reminders';
 function App() {
 
   return (
-    <Router >
+    <Router basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path={process.env.PUBLIC_URL + "/"}>
           <Home />
