@@ -14,7 +14,7 @@ function Applications() {
 		<div id="mac-heading"> 
 			<div className="mac-buttons">
 				<img id="mac-circles" src={macCircles} />
-				<a href='/final'>
+				<a href='/#/final'>
           <img id="applications-back" src={macBack} />
         </a>
 			</div>
@@ -25,11 +25,11 @@ function Applications() {
 		</div>
 
 		<div id="icons">
-				<a href="/spotify">
+				<a href="/#/spotify">
           <img id="spotify" src={spotify} />
         </a>
 				{ /* SOURCE: https://developer.spotify.com/branding-guidelines/ */ }
-				<a href="/zoom">
+				<a href="/#/zoom">
           <img id="zoom" src={zoom} />
         </a>
 				{ /* SOURCE: https://zoom.us/brandguidelines */ }

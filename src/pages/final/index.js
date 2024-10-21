@@ -10,7 +10,7 @@ import style from './assets/css/cover.css'
 /**
  * To anyone reading this - I'm trying to preserve as much of the original vanilla HTML/CSS/JS implementation as possible, 
  * but some tweaks were made to make it compatible with the rest of the website in React. That's why these are now JS files instead of 
- * HTML files. Good luck if you're in WDD; feel free to use this as inspo & reach out if you have any questions <3
+ * HTML files.
  */
 function Final() {
     function show(element) {
@@ -39,21 +39,21 @@ function Final() {
                     <a 
                         className="final-buttons" 
                         id="button1" 
-                        href="/dalgona"
+                        href="/#/dalgona"
                         onMouseOut={() => hide('coffee')}
                         onMouseOver={() => show('coffee')}
                     />
                     <a 
                         className="final-buttons" 
                         id="button2" 
-                        href="/applications"
+                        href="/#/applications"
                         onMouseOut={() => hide('laptop')}
                         onMouseOver={() => show('laptop')}
                     />
                     <a 
                         className="final-buttons" 
                         id="button3" 
-                        href="/reminders"
+                        href="/#/reminders"
                         onMouseOut={() => hide('phone')}
                         onMouseOver={() => {
                             show('phone');

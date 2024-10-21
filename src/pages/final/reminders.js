@@ -12,7 +12,7 @@ function Reminders() {
       <div id="reminders-container">
 
       <div id="reminders-back">
-        <a href='/final'>
+        <a href='/#/final'>
           {'< back'}
           </a>
       </div>

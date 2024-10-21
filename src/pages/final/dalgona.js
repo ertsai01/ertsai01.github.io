@@ -7,7 +7,7 @@ function Dalgona() {
     <div id="dalgona-container">
 
 		<div id="dalgona-back">
-			<a href="/final">
+			<a href="/#/final">
         {'< back'}
       </a>
 		</div>

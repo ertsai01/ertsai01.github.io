@@ -77,7 +77,7 @@ class Experience extends React.Component {
                 tech: 'web dev + design',
                 tools: 'HTML, CSS, JavaScript, Adobe XD',
                 description: "A website reminiscing on life and popular trends during 2020's shelter-in-place.",
-                link: 'https://ertsai01.github.io/final'
+                link: '/#/final'
             }
 
         }

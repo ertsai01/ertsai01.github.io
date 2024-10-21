@@ -64,7 +64,7 @@ function Zoom() {
 				<img class="zoom-icon" src={reaction} />
 			</div>
 			<div id="zoom-right">
-				<a href="/applications">Leave Meeting</a>
+				<a href="/#/applications">Leave Meeting</a>
 			</div>
 		</div>
 

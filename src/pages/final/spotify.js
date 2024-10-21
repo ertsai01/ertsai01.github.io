@@ -8,7 +8,7 @@ function Spotify() {
       <div id="spotify-container">
 
       <div>
-        <a href='/applications'>
+        <a href='/#/applications'>
           {'< back'}
         </a>
       </div>
