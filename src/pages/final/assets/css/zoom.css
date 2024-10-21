@@ -71,10 +71,9 @@
 .zoom-background {
 	position: absolute;
 	width: 665px;
-	opacity: 100%;
 	top: 0;
 	left: 0;
-
+	opacity: 1;
 }
 
 #og {
